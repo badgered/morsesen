@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+<title>Tap Event</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="script/jquery.mobile-1.4.5.min.css">
+<script src="script/jquery-1.11.3.min.js"></script>
+<script src="script/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pagecreate","#page1",function(){
+  $("p").on("tap",function(){
+    $(this).hide();
+  });
+  $("h2").on("tap",function(){
+    $("p").show();
+  });
+});
+</script>
+
+
+<style>
+#dot-btn {
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 50% !important;
+    background-color: blue;
+    color: white;
+    font-size: 30px; 
+
+
+}
+#dash-btn {
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 50% !important;
+    background-color: green;
+    color: white;
+    font-size: 30px; 
+
+}
+
+</style>
+
+</head>
+<body>
+<!-- <div data-role="page" id="page1">
+  <div data-role="header">
+    <h2>Header</h2>
+  </div>
+
+  <div data-role="main" class="ui-content">
+     <p>This line will disappear, if you tap on it.</p>
+  </div>
+-->
+
+<div data-role="content">
+
+  <audio id="dot" src="audio/dot.mp3">
+
+       <p> Your browser does not support etc</p>
+
+       </audio>
+
+      <button id="dot-btn" onclick="document.getElementById('dot').play()">DOT</button>
+
+</div>
+
+ <div data-role="content">
+
+  <audio id="dash" src="audio/dash.mp3">
+
+       <p> Your browser does not support etc</p>
+
+       </audio>
+
+      <button id="dash-btn" onclick="document.getElementById('dash').play()">DASH</button>
+
+</div>
+
+<!--  <div data-role="footer">
+     <h2>Footer</h2>
+  </div>
+
+
+</div> -->
+</body>
+</html>

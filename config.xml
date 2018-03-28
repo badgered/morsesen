@@ -15,5 +15,15 @@
   <author href="https://github.com/badgered/morsesen" email="simon@bizzypeople.com">
       Simon Thompson
   </author>
+<platform name="android">
+<preference name="SplashMaintainAspectRatio" value="true"/>
+<preference name="SplashShowOnlyFirstTime" value="true"/>
+<icon density="ldpi" src="res/ldpi.png"/>
+<icon density="mdpi" src="res/mdpi.png"/>
+<icon density="hdpi" src="res/hdpi.png"/>
+<icon density="xhdpi" src="res/xhdpi.png"/>
+<icon density="xxhdpi" src="res/xxhdpi.png"/>
+<icon density="xxxhdpi" src="res/xxxhdpi.png"/>
 
+</platform>
 </widget>

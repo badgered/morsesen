@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.example"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>MorseSEN</name>
+
+  <description>
+      A simple app for SEN students to generate Morse Code
+  </description>
+
+  <author href="https://github.com/badgered/morsesen" email="simon@bizzypeople.com">
+      Simon Thompson
+  </author>
+
+</widget>

@@ -5,16 +5,6 @@
 <link rel="stylesheet" href="script/jquery.mobile-1.4.5.min.css">
 <script src="script/jquery-1.11.3.min.js"></script>
 <script src="script/jquery.mobile-1.4.5.min.js"></script>
-<script>
-$(document).on("pagecreate","#page1",function(){
-  $("p").on("tap",function(){
-    $(this).hide();
-  });
-  $("h2").on("tap",function(){
-    $("p").show();
-  });
-});
-</script>
 
 
 <style>
@@ -25,6 +15,7 @@ $(document).on("pagecreate","#page1",function(){
     background-color: blue;
     color: white;
     font-size: 30px; 
+    padding: 10px;
 
 
 }
@@ -35,52 +26,33 @@ $(document).on("pagecreate","#page1",function(){
     background-color: green;
     color: white;
     font-size: 30px; 
-
+    padding: 10px;
 }
+
+
 
 </style>
 
 </head>
 <body>
-<!-- <div data-role="page" id="page1">
-  <div data-role="header">
-    <h2>Header</h2>
-  </div>
+<div data-role="content" class="centerit" style="float: right; width: 80%; margin-left:auto; margin-right:auto;" >
 
-  <div data-role="main" class="ui-content">
-     <p>This line will disappear, if you tap on it.</p>
-  </div>
--->
+<div data-role="content" class="ui-block-a rwd-example" ><div class="ui-bar ui-bar-a" style="height:350px; background-color: #ffffff; border-color: #ffffff;">
 
-<div data-role="content">
+  <audio id="dot" src="audio/dot.mp3"></audio>
 
-  <audio id="dot" src="audio/dot.mp3">
-
-       <p> Your browser does not support etc</p>
-
-       </audio>
-
-      <button id="dot-btn" onclick="document.getElementById('dot').play()">DOT</button>
+      <button id="dot-btn" onclick="document.getElementById('dot').play()">SHORT</button> </div>
 
 </div>
 
- <div data-role="content">
+ <div data-role="content"  class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:350px; background-color: #ffffff; border-color: #ffffff;">
 
-  <audio id="dash" src="audio/dash.mp3">
+  <audio id="dash" src="audio/dash.mp3"></audio>
 
-       <p> Your browser does not support etc</p>
-
-       </audio>
-
-      <button id="dash-btn" onclick="document.getElementById('dash').play()">DASH</button>
+      <button id="dash-btn" onclick="document.getElementById('dash').play()">LONG</button></div>
 
 </div>
 
-<!--  <div data-role="footer">
-     <h2>Footer</h2>
-  </div>
-
-
-</div> -->
+</div>
 </body>
 </html>
